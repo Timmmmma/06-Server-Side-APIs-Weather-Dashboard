@@ -30,6 +30,6 @@ Applications deployed site : https://timmmmma.github.io/06-Server-Side-APIs-Weat
 Github address : https://github.com/Timmmmma/06-Server-Side-APIs-Weather-Dashboard
 
 ## Screenshot
-![image]()
+![image](https://github.com/Timmmmma/06-Server-Side-APIs-Weather-Dashboard/blob/main/assets/image/Weather%20Dashboard.png)
 
 
