@@ -23,12 +23,14 @@
   </head>
 
   <body>
+    <!--A header here-->
     <header class="jumbotron">
       <h1 class="display-3 font-weight-bold">Weather Dashboard</h1>
       <h3 id="currentTime"></h3>
     </header>
     <div class="container">
         <div class="row">
+          <!--search bar, search button and search history on left-->
             <div class="col">
                 <div class="search">
                     <h2 class="font-weight-bold">Search for a city :</h2>
@@ -42,7 +44,9 @@
                     </p>
                 </div>
             </div>
+            <!--The weather of today and future are displayed on right-->
             <div class="col-8">
+              <!--Today-->
                 <div class="today shadow p-3 mb-5 bg-white rounded">
                     <h2 id="todayHeader"></h2>
                     <img src="" class="icon p-2 m-2"></img>
@@ -51,6 +55,7 @@
                     <p class="text">Humidity: <span class="humidity"></span></p>
                     <p class="text">UV Index: <a id="UVIndex" class="UVIndex"></a></p>
                 </div>
+                <!--Next 5 day-->
                 <h2>5-Day Forecast:</h2>
                 <div class="next5Day">
                   <section class="row justify-content-around">

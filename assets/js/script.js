@@ -12,13 +12,14 @@ function currentDay() {
 
 setInterval(currentDay);
 
-
+//The function for get today's weather.
 function getWeather(city) {
     let today = moment();
     $("#todayHeader").text(city + " (" + today.format("DD/MM/YYYY") + ")");
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + key;
     fetch(queryURL)
         .then(function(Response) {
+            //Report unfound if status value is 404.
             if (Response.status === 404) {
                 alert("Error!");
               }else {
@@ -40,7 +41,7 @@ function getWeather(city) {
 }
 
 
-
+//The function for get next 5 day weather.
 function getWeather5(city) {
     var queryURL3 = "https://api.openweathermap.org/data/2.5/forecast?q=" +city+ "&units=imperial&appid=" + key;
     fetch(queryURL3)
@@ -100,6 +101,7 @@ function getUvIndex(lat, lon) {
             
           }
     })
+    //Change the background color according to the UV index.
     .then(function(Response){
         var currentUvi = Response.current.uvi
         $("#UVIndex").text(currentUvi);
@@ -122,16 +124,12 @@ function getUvIndex(lat, lon) {
 
 }
 
+//save search history in local storage and create a new button for it 
 function saveHistory(cityName) {
     if (cityName == "") {
         console.log("No value entered!");
         alert("No value entered!");
-    }else {
-        //var historyBtn = document.createElement("button");
-        //historyBtn.classList = "newBtn btn btn-light col-12 col-sm-11 text-center p-2 m-1";
-        //historyBtn.textContent = cityName;
-        //searchBar.append(historyBtn);
-        
+    }else {  
         var cityList = {
             city : cityName,
         };
@@ -171,12 +169,5 @@ $("#searchBtn").on("click", function(){
     
 });
 
-function masage(){
-    alert("no");
-}
 
-$(".111").on("click", function(){
-    alert("langlang");
-    //getWeather(cityName);
-})
 
