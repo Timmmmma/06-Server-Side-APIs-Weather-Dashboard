@@ -26,8 +26,8 @@ THEN I am again presented with current and future conditions for that city
 ```
 
 ## Link
-Applications deployed site : https://timmmmma.github.io/06-Server-Side-APIs-Weather-Dashboard/
-Github address : https://github.com/Timmmmma/06-Server-Side-APIs-Weather-Dashboard
+Applications deployed site : https://timmmmma.github.io/Weather-Dashboard
+Github address : https://github.com/Timmmmma/Weather-Dashboard
 
 ## Screenshot
 ![image](https://github.com/Timmmmma/06-Server-Side-APIs-Weather-Dashboard/blob/main/assets/image/Weather%20Dashboard.png)
